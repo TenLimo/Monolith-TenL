@@ -1,7 +1,7 @@
 - type: entity
-  name: kunisa-pattern plasma autopulser
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseFactionGearOtherFactionT3 ] # Forge-change add parent forbidden ADS
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseFactionGearOtherFactionT3 ]
   id: WeaponRifleADMAutopulserForge
+  name: kunisa-pattern plasma autopulser
   description: An advanced handheld plasma rifle. The design bears similarities to pre-fracture plasma weapons.
   suffix: Forge, ADM
   components:
@@ -50,9 +50,9 @@
     autoRechargeRate: 35
 
 - type: entity
-  name: kunisa-pattern plasma autopulser
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseFactionGearOtherFactionT3 ] # Forge-change add parent forbidden ADS
   id: WeaponRifleAsakimAutopulserForge
+  name: kunisa-pattern plasma autopulser
   description: An advanced handheld plasma rifle. The design bears similarities to pre-fracture plasma weapons.
   suffix: Forge, Asakim, Biocode
   components:
@@ -112,9 +112,9 @@
     autoRechargeRate: 35
 
 - type: entity
-  name: kunisa-pattern plasma pistol
   parent: BaseWeaponBatterySmall
   id: WeaponRifleADMPistolForge
+  name: kunisa-pattern plasma pistol
   description: An advanced handheld plasma pistol. The design bears similarities to pre-fracture plasma weapons.
   suffix: Forge
   components:
@@ -157,9 +157,9 @@
     autoRechargeRate: 35
 
 - type: entity
-  name: kunisa-pattern plasma pistol
   parent: [ WeaponRifleADMPistolForge, BaseFactionGearOtherFactionT3 ] # Forge-change add parent forbidden ADS
   id: WeaponRifleAsakimPistolForge
+  name: kunisa-pattern plasma pistol
   description: An advanced handheld plasma pistol. The design bears similarities to pre-fracture plasma weapons.
   suffix: Forge
   components:
@@ -188,9 +188,9 @@
     Sabotageable: false # Forge-Change
 
 - type: entity
-  name: kunisa-pattern plasma machine pistol
   parent: WeaponRifleADMPistolForge
-  id: WeaponRifleADMsmgForge
+  id: WeaponRifleADMSmgForge
+  name: kunisa-pattern plasma machine pistol
   description: An advanced handheld plasma SMG. It utilizes high-output magnetic coils to achieve a blistering fire rate, at the cost of rapid overheating and heavy recoil.
   suffix: Forge, ADM
   components:
@@ -218,8 +218,8 @@
     fireCost: 20
 
 - type: entity
-  name: kunisa-pattern plasma machinegun
   parent: WeaponRifleADMAutopulserForge
+  name: kunisa-pattern plasma machinegun
   id: WeaponRifleADMMachinegunForge
   description: An advanced handheld plasma machinegun. It fires physically solid, razor-sharp shards of plasma that slice through targets on a monomolecular level.
   suffix: Forge, ADM
@@ -242,9 +242,9 @@
     fireCost: 15
 
 - type: entity
-  name: kunisa-pattern plasma rifle
   parent: WeaponRifleADMAutopulserForge
   id: WeaponRifleADMRifleForge
+  name: kunisa-pattern plasma rifle
   description: An advanced handheld plasma rifle. It punches through any defense, tearing targets apart and leaving searing, white-hot burn holes.
   suffix: Forge, ADM
   components:
@@ -275,9 +275,9 @@
     autoRechargeRate: 60
 
 - type: entity
-  name: kunisa-pattern plasma machine pistol
   parent: WeaponRifleAsakimPistolForge
-  id: WeaponRifleAsakimsmgForge
+  id: WeaponRifleAsakimSmgForge
+  name: kunisa-pattern plasma SMG
   description: An advanced handheld plasma SMG. It utilizes high-output magnetic coils to achieve a blistering fire rate, at the cost of rapid overheating and heavy recoil.
   suffix: Forge, Asakim, Biocode
   components:
@@ -305,9 +305,9 @@
     fireCost: 20
 
 - type: entity
-  name: kunisa-pattern plasma machinegun
   parent: WeaponRifleAsakimAutopulserForge
-  id: WeaponRifleAsakimmachinegunForge
+  id: WeaponRifleAsakimMachinegunForge
+  name: kunisa-pattern plasma machinegun
   description: An advanced handheld plasma machinegun. It fires physically solid, razor-sharp shards of plasma that slice through targets on a monomolecular level.
   suffix: Forge, Asakim, Biocode
   components:
@@ -329,9 +329,9 @@
     fireCost: 15
 
 - type: entity
-  name: kunisa-pattern plasma rifle
   parent: WeaponRifleAsakimAutopulserForge
   id: WeaponRifleAsakimRifleForge
+  name: kunisa-pattern plasma rifle
   description: An advanced handheld plasma rifle. It punches through any defense, tearing targets apart and leaving searing, white-hot burn holes.
   suffix: Forge, Asakim, Biocode
   components:

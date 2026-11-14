@@ -30,7 +30,7 @@ ent-ComputerShuttleMedicalHospitalRemote = Консоль трафика Гос�
 ent-ComputerShuttleGoblin = консоль управления шаттлом "Путеводитель"
     .desc = Новая видеоигра с иммерсивным управлением вашего шаттла у вас дома! Протараньте как можно больше точек на экране, чтобы выиграть приз.
 
-ent-HoloComputerForerunner = голокомпьютер
+ent-HoloComputerForerunner = голоконсоль
     .desc = Эта высокотехнологичая консоль служит для неведомых вам целей… Она — реликт ушедшей эпохи.
     .suffix = Forge, Предтеч
 ent-BaseComputerForerunner = древняя консоль

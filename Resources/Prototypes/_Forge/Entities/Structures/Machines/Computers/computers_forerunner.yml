@@ -1,49 +1,5 @@
-# New holocomputer, really cool and futuristic. It’s just a decoration(and button).
 - type: entity
-  id: BaseStructureHoloComputer
-  parent: BaseStructure
-  abstract: true
-  components:
-  - type: Physics
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.25,-0.35,0.25,0.35"
-        density: 190
-        mask:
-          - TabletopMachineMask
-        layer:
-          - TabletopMachineLayer
-  - type: InteractionOutline
-  - type: Rotatable
-  - type: Anchorable
-  - type: Construction
-    graph: Computer
-    node: frameUnsecured
-  - type: Sprite
-    drawdepth: SmallObjects
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: Electronic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: StaticPrice
-    price: 100
-
-- type: entity
-  parent: BaseStructureHoloComputer
+  parent: BaseComputer
   id: HoloComputerForerunner
   name: ancient holocomputer
   description: Used to do something.. This computer is a relic of a bygone era.
@@ -57,87 +13,15 @@
       state: holocomputer
     - map: ["computerLayerScreen"]
       state: holoscreen
-  - type: PowerSwitch
-  - type: Animateable
-  - type: MeleeSound
-    soundGroups:
-      Brute:
-        collection: GlassSmash
-  - type: Computer
-  - type: ApcPowerReceiver
-    powerLoad: 200
-  - type: ExtensionCableReceiver
-  - type: ActivatableUIRequiresPower
   - type: SignalSwitch
     onPort: Pressed
     offPort: Pressed
     statusPort: Pressed
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ComputerVisuals.Powered:
-        computerLayerScreen:
-          True: { visible: true, shader: unshaded }
-          False: { visible: false }
-  - type: LitOnPowered
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
-    offset: "0, 0.4"
-    castShadows: false
-  - type: EmitSoundOnUIOpen
-    sound:
-      collection: Keyboard
-      params:
-        volume: -1
-        variation: 0.10
-        pitch: 1.10
-    blacklist:
-      tags:
-      - NoConsoleSound
-  - type: ContainerContainer
-    containers:
-      board: !type:Container
-        ents: []
-  - type: LightningTarget
-    priority: 1
-  - type: RequireProjectileTarget
-  - type: Electrified
-    enabled: false
-    usesApcPower: true
-  - type: WiresPanel
-  - type: WiresVisuals
-  - type: Wires
-    boardName: wires-board-name-computer
-    layoutId: Computer
-  - type: LanguageSpeaker
-  - type: LanguageKnowledge
-    speaks:
-    - TauCetiBasic
-    understands:
-    - TauCetiBasic
-  - type: Battery
-    maxCharge: 100
-    startingCharge: 100
-  - type: ExaminableBattery
-  - type: BatterySelfRecharger
-  - type: ApcPowerReceiverBattery
-    idleLoad: 5
-    batteryRechargeRate: 250
-    batteryRechargeEfficiency: 0.95
-  - type: SpamEmitSoundRequirePower
-  - type: SpamEmitSound
-    minInterval: 12
-    maxInterval: 36
-    sound:
-      collection: MonoComputerSFX
-      params:
-        volume: -12
-        maxDistance: 4
-        variation: 0.05
+  - type: DisableToolUse
+    prying: True
+  - type: PowerSwitch
+
+
 
 #Frame and computers with different screens in forerunner style
 

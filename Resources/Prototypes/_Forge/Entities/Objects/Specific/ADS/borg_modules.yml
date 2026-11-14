@@ -49,7 +49,7 @@
     moduleId: Security
     items:
     - WeaponPhaseBladeForge
-    - WeaponRifleADMsmgForge
+    - WeaponRifleADMSmgForge
   - type: BorgModuleIcon
     icon: { sprite: _Forge/Interface/Action/actions_borg.rsi, state: standard-weapon-module }
 
@@ -67,7 +67,7 @@
     moduleId: Security
     items:
     - WeaponPhaseBladeForge
-    - WeaponRifleADMMachinepulserForge
+    - WeaponRifleADMMachinegunForge
   - type: BorgModuleIcon
     icon: { sprite: _Forge/Interface/Action/actions_borg.rsi, state: standard-weapon-module }
 
@@ -92,7 +92,7 @@
 - type: entity
   id: BorgModuleForerunnerDevastatorExplosive
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: pre-fracture advanced weapon cyborg module(Long range)
+  name: pre-fracture self-destruction system cyborg module
   components:
   - type: Sprite
     sprite: _Forge/Objects/Specific/Robotics/borgmodule.rsi
@@ -109,7 +109,7 @@
 - type: entity
   id: BorgModuleForerunnerDevastatorWeapon
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: pre-fracture advanced weapon cyborg module(Long range)
+  name: pre-fracture advanced weapon cyborg module(Melee)
   components:
   - type: Sprite
     sprite: _Forge/Objects/Specific/Robotics/borgmodule.rsi

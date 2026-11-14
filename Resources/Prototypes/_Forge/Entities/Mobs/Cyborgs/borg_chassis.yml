@@ -58,7 +58,7 @@
   - type: BorgSwitchableType
     selectedBorgType: ForerunnerAssault
   - type: BorgSwitchableSubtype
-    borgSubtype: ForerunnerAssault_default
+    borgSubtype: ForerunnerAssaultDefault
   - type: Damageable
     damageContainer: Silicon
     damageModifierSet: FactionBorgChassisAssault
@@ -71,7 +71,7 @@
   - type: BorgSwitchableType
     selectedBorgType: ForerunnerAssaultDevastator
   - type: BorgSwitchableSubtype
-    borgSubtype: ForerunnerAssaultDevastator_default
+    borgSubtype: ForerunnerAssaultDevastatorDefault
   - type: Damageable
     damageContainer: Silicon
     damageModifierSet: FactionBorgChassisAssault
@@ -84,7 +84,7 @@
   - type: BorgSwitchableType
     selectedBorgType: ForerunnerAssaultRifle
   - type: BorgSwitchableSubtype
-    borgSubtype: ForerunnerAssaultRifle_default
+    borgSubtype: ForerunnerAssaultRifleDefault
   - type: Damageable
     damageContainer: Silicon
     damageModifierSet: FactionBorgChassisAssault
@@ -97,7 +97,7 @@
   - type: BorgSwitchableType
     selectedBorgType: ForerunnerAssaultMachinegun
   - type: BorgSwitchableSubtype
-    borgSubtype: ForerunnerAssaultMachinegun_default
+    borgSubtype: ForerunnerAssaultMachinegunDefault
   - type: Damageable
     damageContainer: Silicon
     damageModifierSet: FactionBorgChassisAssault
@@ -110,7 +110,7 @@
   - type: BorgSwitchableType
     selectedBorgType: ForerunnerAssaultSMG
   - type: BorgSwitchableSubtype
-    borgSubtype: ForerunnerAssaultSMG_default
+    borgSubtype: ForerunnerAssaultSMGDefault
   - type: Damageable
     damageContainer: Silicon
     damageModifierSet: FactionBorgChassisAssault
@@ -123,43 +123,43 @@
   - type: BorgSwitchableType
     selectedBorgType: ForerunnerEngineer
   - type: BorgSwitchableSubtype
-    borgSubtype: ForerunnerEngineer_default
+    borgSubtype: ForerunnerEngineerDefault
 #endregion
 
 #region borgSubtype
 - type: borgSubtype
   parentBorgType: ForerunnerAssault
-  id: ForerunnerAssault_default
+  id: ForerunnerAssaultDefault
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: ForerunnerBorgChassisAssault
 
 - type: borgSubtype
   parentBorgType: ForerunnerAssaultDevastator
-  id: ForerunnerAssaultDevastator_default
+  id: ForerunnerAssaultDevastatorDefault
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: ForerunnerBorgChassisAssaultDevastator
 
 - type: borgSubtype
   parentBorgType: ForerunnerAssaultRifle
-  id: ForerunnerAssaultRifle_default
+  id: ForerunnerAssaultRifleDefault
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: ForerunnerBorgChassisAssaultRifle
 
 - type: borgSubtype
   parentBorgType: ForerunnerAssaultMachinegun
-  id: ForerunnerAssaultMachinegun_default
+  id: ForerunnerAssaultMachinegunDefault
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: ForerunnerBorgChassisAssaultMachinegun
 
 - type: borgSubtype
   parentBorgType: ForerunnerAssaultSMG
-  id: ForerunnerAssaultSMG_default
+  id: ForerunnerAssaultSMGDefault
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: ForerunnerBorgChassisAssaultSMG
 
 - type: borgSubtype
   parentBorgType: ForerunnerEngineer
-  id: ForerunnerEngineer_default
+  id: ForerunnerEngineerDefault
   spritePath: Mobs/Silicon/chassis.rsi
   dummyPrototype: ForerunnerBorgChassisEngineer
 #endregion

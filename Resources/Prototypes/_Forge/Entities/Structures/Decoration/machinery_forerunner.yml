@@ -3,6 +3,7 @@
   parent: BaseMachinePowered
   name: ancient data filter
   description: Various data keep popping up on the screen of this strange machine.
+  suffix: Forge
   components:
   - type: Sprite
     sprite: _Forge/Structures/Decoration/machinery_forerunner.rsi
@@ -26,9 +27,10 @@
 
 - type: entity
   id: ForerunnerMachineryDataServer
-  parent: BaseMachinePowered
+  parent: ForerunnerMachineryDataFilter
   name: ancient data server
   description: A large and bulky server. It is noisy.
+  suffix: Forge
   components:
   - type: Sprite
     sprite: _Forge/Structures/Decoration/machinery_forerunner.rsi
@@ -39,28 +41,13 @@
     - state: dataserver_unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.PowerDeviceVisuals.Powered:
-        enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
-  - type: AmbientOnPowered
-  - type: AmbientSound
-    volume: -15
-    range: 2
-    sound:
-      path: /Audio/Ambience/Objects/server_fans.ogg
-  - type: PowerSwitch
-  - type: Anchorable
-  - type: Pullable
 
 - type: entity
   id: ForerunnerMachineryDataValidator
-  parent: BaseMachinePowered
+  parent: ForerunnerMachineryDataFilter
   name: ancient data validator
   description: An old-looking machine. You have no idea what it does.
+  suffix: Forge
   components:
   - type: Sprite
     sprite: _Forge/Structures/Decoration/machinery_forerunner.rsi
@@ -71,13 +58,3 @@
     - state: datavalidator_unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.PowerDeviceVisuals.Powered:
-        enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
-  - type: PowerSwitch
-  - type: Anchorable
-  - type: Pullable

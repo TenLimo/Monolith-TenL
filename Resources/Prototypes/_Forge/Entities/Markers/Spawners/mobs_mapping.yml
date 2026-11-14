@@ -16,7 +16,7 @@
 
 - type: entity
   parent: ForgeMappingSpawnerBase
-  id: SpawnMobForerunnerSiliconEngineer
+  id: SpawnerMobForerunnerEngiSilicon
   name: forerunner engineer cyborg spawner
   suffix: Forge, Mapping, AI, Engineer
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: ForgeMappingSpawnerBase
-  id: SpawnMobForerunnerSiliconAssault
+  id: SpawnerMobForerunnerAssaultSilicon
   name: forerunner assault cyborg spawner
   suffix: Forge, Mapping, AI, Assault
   components:
@@ -48,7 +48,7 @@
 
 - type: entity
   parent: ForgeMappingSpawnerBase
-  id: SpawnMobForerunnerSiliconRandom
+  id: SpawnerMobForerunnerSiliconRandom
   name: forerunner cyborg spawner
   suffix: Forge, Mapping, AI, Random
   components:
@@ -69,7 +69,7 @@
 
 - type: entity
   parent: ForgeMappingSpawnerBase
-  id: SpawnMobForerunnerSiliconEngiWeak
+  id: SpawnerMobForerunnerEngiSiliconWeak
   name: remnant engineer cyborg spawner
   suffix: Forge, Mapping, AI, Engineer
   components:
@@ -85,7 +85,7 @@
 
 - type: entity
   parent: ForgeMappingSpawnerBase
-  id: SpawnMobForerunnerSiliconAssaultWeak
+  id: SpawnerMobForerunnerAssaultSiliconWeak
   name: remnant assault cyborg spawner
   suffix: Forge, Mapping, AI, Assault
   components:
@@ -101,7 +101,7 @@
 
 - type: entity
   parent: ForgeMappingSpawnerBase
-  id: SpawnMobForerunnerSiliconWeakRandom
+  id: SpawnerMobForerunnerSiliconWeakRandom
   name: remnant cyborg spawner
   suffix: Forge, Mapping, AI, Random
   components:

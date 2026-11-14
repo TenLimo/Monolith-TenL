@@ -59,9 +59,6 @@
     - SiliconsExpeditionNF
   - type: NameIdentifier
     group: Silicon
-  - type: Bloodstream
-    bloodReagent: NaniteFuel
-    bloodMaxVolume: 60
   - type: MobState
     allowedStates:
     - Alive
